@@ -4,7 +4,7 @@ public class Parcel : DeliveryItem
 {
     public string Dimensions { get; }
 
-    public Parcel(string trackingNumber, double weight, string dimensions) : base(trackingNumber, weight)
+    public Parcel(string trackingNumber, double weight) : base(trackingNumber, weight)
     {
         Dimensions="20*30*15";
     }

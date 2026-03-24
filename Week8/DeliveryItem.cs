@@ -1,6 +1,6 @@
 ﻿namespace Week8;
 
-public class DeliveryItem
+public abstract class DeliveryItem
 {
     public string TrackingNumber { get; set; }
     
@@ -17,6 +17,6 @@ public class DeliveryItem
 
     public virtual void PrintInfo()
     {
-        Console.WriteLine($"The parcel with track n. {TrackingNumber} is {Weight}");
+        Console.WriteLine($"{TrackingNumber} is {Weight}kg");
     }
 }
